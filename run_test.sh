@@ -1,1 +1,1 @@
-python ./scripts/predict.py --output_dir "/root/paddlejob/workspace/env_run/output/grpo/grpo_finetuned_model"
+python ./scripts/predict.py --output_dir "output/grpo/grpo_finetuned_model"
