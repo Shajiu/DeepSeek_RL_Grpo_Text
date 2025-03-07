@@ -97,7 +97,7 @@ def main(args):
     # 从训练数据中分割部分为验证集
     size_of_eval_data = 30  # change to a smaller value to save time or to a larger number for a more reliable estimate
     eval_data = all_data[:size_of_eval_data]
-    train_data = all_data[size_of_eval_data:200]
+    train_data = all_data[size_of_eval_data:]
 
     # (1) 未训练前进行预测获取指标
     print("\nInitial model evaluation before finetuning:")
