@@ -105,7 +105,7 @@ def parse_args():
     parser.add_argument("--lora_module_name", type=str, default="query_key_value", help="")
     # Freeze
     parser.add_argument("--freeze_module_name", type=str, default="layers.27.", help="")
-    parser.add_argument("--wandb_api_key", type=str, default="80220a70381b6e059a35692371e2a5679f751465", help="访问：https://wandb.ai/authorize 即可看到key")
+    parser.add_argument("--wandb_api_key", type=str, default="填写自己的key", help="访问：https://wandb.ai/authorize 即可看到key")
     parser.add_argument("--wandb_project", type=str, default="grpo_finetuned_model", help="")
     # P-tuning
     parser.add_argument('--pre_seq_len', type=int, default=16, help='')
