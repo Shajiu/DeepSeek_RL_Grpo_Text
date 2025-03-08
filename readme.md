@@ -63,6 +63,20 @@ DeepSeek_RL_Grpo_Text
 │
 └── requirements.txt             # 项目依赖文件，列出所有必需的库
 ```
+🔍 **使用方式**：
+```
+sh run_train.sh         # 运行以下命令进行模型训练：
+sh run_test.sh          # 运行以下命令进行推理
+```
+📌 **数据格式**：
+```
+# 数据集的格式要求：每一行是一个 JSON 对象，格式如下：
+{
+  "question": "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?", 
+  "answer": "Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72"
+}
+# question 字段表示问题文本。answer 字段包含详细解答及最终答案。  #### 72 代表最终答案，格式可根据需求调整。
+```
 
 🌟 **前行的动力**：
 
