@@ -65,8 +65,8 @@ DeepSeek_RL_Grpo_Text
 ```
 🔍 **使用方式**：
 ```
-sh run_train.sh         # 运行以下命令进行模型训练：
-sh run_test.sh          # 运行以下命令进行推理
+sh run_train.sh         # 运行以下命令进行模型训练
+sh run_test.sh          # 运行以下命令进行模型推理
 ```
 📌 **数据格式**：
 ```
