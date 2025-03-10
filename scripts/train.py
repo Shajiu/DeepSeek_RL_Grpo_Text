@@ -67,6 +67,7 @@ def main(args):
     # 访问：https://wandb.ai/authorize 即可看到key
     os.environ["WANDB_API_KEY"] = args.wandb_api_key
     os.environ["WANDB_PROJECT"] = args.wandb_project
+    os.environ["WANDB_DISABLED"] ='true'
     # Main execution
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print(f"Using primary device: {device}")
