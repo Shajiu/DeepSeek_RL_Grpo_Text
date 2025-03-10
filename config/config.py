@@ -80,7 +80,7 @@ def parse_args():
     parser.add_argument("--max_src_len", type=int, default=256, help="")
     parser.add_argument("--is_skip", action='store_true', help="")
     # Train
-    parser.add_argument("--per_device_train_batch_size", type=int, default=16, help="")
+    parser.add_argument("--per_device_train_batch_size", type=int, default=3, help="")
     parser.add_argument("--learning_rate", type=float, default=5e-6, help="")
     parser.add_argument("--weight_decay", type=float, default=0.1, help="")
     parser.add_argument("--num_train_epochs", type=int, default=1, help="")
@@ -106,7 +106,7 @@ def parse_args():
     # Freeze
     parser.add_argument("--freeze_module_name", type=str, default="layers.27.", help="")
     parser.add_argument("--wandb_api_key", type=str, default="填写自己的key", help="访问：https://wandb.ai/authorize 即可看到key")
-    parser.add_argument("--wandb_project", type=str, default="grpo_finetuned_model", help="")
+    parser.add_argument("--wandb_project", type=str, default="grpo_finetuned_model_tmp", help="")
     # P-tuning
     parser.add_argument('--pre_seq_len', type=int, default=16, help='')
     parser.add_argument('--prefix_projection', type=bool, default=True, help='')
